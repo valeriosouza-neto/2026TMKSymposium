@@ -1,0 +1,258 @@
+<!doctype html>
+<html lang="en-AU">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Programme for the 2026 TMK HDR Symposium at Griffith University's Gold Coast campus on 24 November 2026.">
+  <title>2026 TMK HDR Symposium | Programme</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --paper: #ffffff;
+      --ink: #000000;
+      --muted: #4a4a4a;
+      --griffith-red: #e51f30;
+      --rule: #dedede;
+      font-family: "Inter", system-ui, sans-serif;
+    }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: var(--paper); color: var(--ink); line-height: 1.6; }
+    .wrap { width: min(68rem, calc(100% - 3rem)); margin-inline: auto; }
+    header { background: var(--griffith-red); color: var(--paper); padding: 3.3rem 0 3.6rem; border-top: .4rem solid var(--ink); }
+    .host { font-size: .88rem; margin: 0 0 2.2rem; }
+    h1, h2, h3 { font-family: "Instrument Serif", Georgia, serif; line-height: 1.14; font-weight: 500; }
+    h1 { font-size: clamp(2.75rem, 7vw, 5.35rem); letter-spacing: -.05em; margin: 0; text-wrap: balance; }
+    .theme { font-size: clamp(1.02rem, 2.5vw, 1.35rem); margin: .75rem 0 2rem; }
+    .logistics { display: flex; flex-wrap: wrap; gap: .45rem 1.5rem; padding-top: 1rem; border-top: 1px solid rgb(255 255 255 / 55%); }
+    .venue {
+      width: fit-content;
+      color: inherit;
+      font-weight: 650;
+      text-underline-offset: .2em;
+    }
+    .venue:hover { text-decoration-thickness: .14em; }
+    .logistics .venue:focus-visible { outline-color: currentColor; }
+    .venue-map {
+      box-sizing: border-box;
+      width: min(42rem, calc(100% - 2rem));
+      max-height: calc(100dvh - 2rem);
+      padding: 0;
+      border: 1px solid var(--rule);
+      border-top: .4rem solid var(--griffith-red);
+      border-radius: .5rem;
+      background: var(--paper);
+      color: var(--ink);
+      box-shadow: 0 1rem 3rem rgb(0 0 0 / 25%);
+      overflow: auto;
+    }
+    .venue-map::backdrop { background: rgb(0 0 0 / 65%); }
+    .map-heading { display: flex; align-items: start; gap: .75rem; justify-content: space-between; }
+    .map-info, .map-actions { padding: 1rem 1.25rem; }
+    .map-heading h2 { margin: 0; font-size: clamp(1.65rem, 5vw, 2.35rem); }
+    .map-info p { margin: .35rem 0 0; color: var(--muted); }
+    .map-heading form { margin: 0; }
+    .map-heading button {
+      background: var(--paper);
+      color: var(--ink);
+      border: 1px solid var(--rule);
+      border-radius: .25rem;
+      padding: .55rem .75rem;
+      cursor: pointer;
+      font: inherit;
+    }
+    .map-heading button:hover { border-color: var(--ink); }
+    .map-heading button:focus-visible { outline: 2px solid var(--griffith-red); outline-offset: .2rem; }
+    .venue-map iframe { display: block; width: 100%; height: clamp(15rem, 55dvh, 26rem); border: 0; }
+    main { padding: 2.5rem 0 4rem; }
+    .intro { max-width: 70ch; margin: 0 0 2.3rem; color: var(--muted); }
+    h2 { font-size: clamp(2rem, 5vw, 3.1rem); margin: 0 0 .75rem; }
+    .agenda { padding: 0; margin: 0; list-style: none; border-top: 1px solid var(--rule); }
+    .item { display: grid; grid-template-columns: 11rem minmax(0, 1fr); gap: .3rem 1.25rem; padding: 1.2rem 0 1.3rem; border-bottom: 1px solid var(--rule); }
+    .slot { color: var(--griffith-red); font-weight: 700; font-size: .9rem; font-variant-numeric: tabular-nums; padding-top: .24rem; }
+    h3 { margin: 0; font-size: clamp(1.35rem, 2vw, 1.8rem); }
+    .session p { margin: .45rem 0 0; }
+    .team { color: var(--muted); font-size: .92rem; }
+    details { margin-top: .6rem; }
+    summary { color: var(--griffith-red); cursor: pointer; font-weight: 650; width: fit-content; font-size: .92rem; }
+    summary:hover { text-decoration: underline; }
+    details ol, details ul { margin: .55rem 0; padding-left: 1.35rem; }
+    details li + li { margin-top: .35rem; }
+    blockquote { border-left: 2px solid var(--griffith-red); padding-left: .9rem; margin: .65rem 0; }
+    a { color: var(--griffith-red); }
+    a:focus-visible, summary:focus-visible { outline: 2px solid var(--griffith-red); outline-offset: .25rem; }
+    footer { border-top: 1px solid var(--rule); padding: 1.1rem 0; font-size: .9rem; color: var(--muted); }
+    @media (max-width: 600px) {
+      .wrap { width: calc(100% - 2rem); }
+      header { padding: 2rem 0 2.2rem; }
+      .item { grid-template-columns: minmax(0, 1fr); }
+      .slot { padding-top: 0; }
+      .logistics { display: grid; gap: .2rem; }
+    }
+    @media print {
+      header { background: none; color: var(--ink); border-top: 0; padding: 0; }
+      .host, .slot, summary { color: var(--ink); }
+      .item { break-inside: avoid; }
+      footer, .venue-map { display: none; }
+    }
+  </style>
+</head>
+<body id="top">
+  <header>
+    <div class="wrap">
+      <p class="host">Department of Tourism and Marketing · Griffith Business School · Griffith University</p>
+      <h1>2026 TMK HDR Symposium</h1>
+      <p class="theme">Research, Resilience &amp; What Comes Next</p>
+      <div class="logistics">
+        <time datetime="2026-11-24">Tuesday, 24 November 2026</time>
+        <a class="venue" href="https://www.google.com/maps/search/?api=1&amp;query=-27.96261%2C153.38310" id="venue-link">
+          Gold Coast campus · Room G42_4.23 <span aria-hidden="true">·</span> View map
+        </a>
+      </div>
+    </div>
+  </header>
+  <main class="wrap">
+    <p class="intro">The Higher Degree Research (HDR) Symposium brings together HDR candidates and academic colleagues to exchange ideas, share research experiences and celebrate the achievements of the TMK HDR community. This second edition builds on the inaugural symposium held at the Gold Coast campus in 2025.</p>
+    <section aria-labelledby="programme">
+      <h2 id="programme">Programme</h2>
+      <ol class="agenda" role="list">
+        <li class="item">
+          <span class="slot">9:45–10:00 am</span>
+          <div class="session">
+            <h3>Coffee, Connections and Conversations</h3>
+            <p>Register, enjoy coffee and light refreshments, and meet fellow HDR candidates and academic colleagues.</p>
+          </div>
+        </li>
+        <li class="item">
+          <span class="slot">10:00–10:10 am</span>
+          <div class="session">
+            <h3>Welcome and Opening Remarks</h3>
+            <p>Associate Professor Sara Thaichon welcomes participants and introduces the symposium theme and programme.</p>
+          </div>
+        </li>
+        <li class="item">
+          <span class="slot">10:10–10:45 am</span>
+          <div class="session">
+            <h3>Keynote: Surviving the PhD and Thereafter</h3>
+            <p>Professor Charles Arcodia shares practical strategies for navigating doctoral study, building confidence as a scholar and preparing for life after graduation.</p>
+          </div>
+        </li>
+        <li class="item">
+          <span class="slot">10:45 am–11:45 am</span>
+          <div class="session">
+            <h3>Session 1 – From Potential to Publication: Mastering the Art of the Abstract</h3>
+            <p>Learn Professor Brent Moyle’s approach to structuring a research abstract, then use it to draft or refine a 150-word abstract based on your own research.</p>
+            <p class="team"><strong>Chair and presenter</strong> · Professor Brent Moyle</p>
+            <p class="team"><strong>Facilitators</strong> · Professor François Carrillat, Associate Professor Sara Thaichon, Associate Professor Elaine Yang, Dr Yawei Jiang, Dr Truc Le and Dr Mai Nguyen</p>
+            <details>
+              <summary>Workshop format and preparation</summary>
+              <ol>
+                <li><strong>Abstract-writing formula (10 minutes).</strong> Brent introduces the components of an effective research abstract.</li>
+                <li><strong>Abstract Writing Challenge (40 minutes).</strong> Draft or refine your abstract in groups of four to five, with feedback from peers and academic facilitators.</li>
+                <li><strong>Closing reflections (10 minutes).</strong> Review the principles you can use to keep refining your abstract.</li>
+              </ol>
+              <p>No advance preparation is required.</p>
+            </details>
+          </div>
+        </li>
+        <li class="item">
+          <span class="slot">11:45 am–12:30 pm</span>
+          <div class="session">
+            <h3>Lunch and Scholarly Connections</h3>
+            <p>An informal opportunity to meet fellow researchers and academic facilitators over lunch.</p>
+          </div>
+        </li>
+        <li class="item">
+          <span class="slot">12:30–1:30 pm</span>
+          <div class="session">
+            <h3>Session 2 – Behind the Success: Rejection and Resilience in Academia and Beyond</h3>
+            <p>Panellists share experiences of rejection and professional setbacks, reflect on how they responded and take questions from HDR candidates.</p>
+            <p class="team"><strong>Chair</strong> · Professor Brent Moyle</p>
+            <p class="team"><strong>Panellists</strong> · Professor Kevin Filo, Associate Professor Gavin Northey, Associate Professor Elaine Yang, Dr Mai Nguyen and Dr Lakshi Senevirathna</p>
+            <details>
+              <summary>Discussion topics</summary>
+              <p>The panel will discuss setbacks during and after the PhD, managing criticism, maintaining confidence and deciding when to persist or change direction.</p>
+            </details>
+          </div>
+        </li>
+        <li class="item">
+          <span class="slot">1:30–1:40 pm</span>
+          <div class="session">
+            <h3>Break</h3>
+          </div>
+        </li>
+        <li class="item">
+          <span class="slot">1:40–2:40 pm</span>
+          <div class="session">
+            <h3>Session 3 – Beyond the Thesis: Defining Your Research Identity and Voice</h3>
+            <p>Each panellist will have five minutes to share their perspective on how scholarly identities develop throughout an academic career. You’ll then draft your own scholarly positioning statement with support from academic facilitators.</p>
+            <p class="team"><strong>Chair</strong> · Professor Brent Moyle</p>
+            <p class="team"><strong>Panellists</strong> · Associate Professor Sara Thaichon, Dr Yawei Jiang, Professor Charles Arcodia and Professor François Carrillat</p>
+            <details>
+              <summary>Activity, reflection prompts and preparation</summary>
+              <p><strong>The Scholarly Positioning Challenge (30 minutes).</strong> Use these prompts to draft a statement, then share it with your group for feedback.</p>
+              <ol>
+                <li><strong>Define your scholarly purpose.</strong> What questions interest you most? What do you want your research to contribute to knowledge, practice or society?</li>
+                <li><strong>Identify your strengths and positioning.</strong> What knowledge, skills, perspectives or experiences do you bring? Which scholarly communities might value your approach?</li>
+                <li><strong>Construct your scholarly narrative.</strong> Bring your research interests, expertise and intended contribution together in a short statement.</li>
+              </ol>
+              <blockquote>My research focuses on [broader research area or problem]. I am particularly interested in [research questions or perspectives], drawing on [expertise or approaches]. Through my research, I aim to contribute to [knowledge, practice or societal impact].</blockquote>
+              <p>Identify one practical action to develop or communicate your research identity, such as pursuing a collaboration, developing expertise or engaging with a scholarly community.</p>
+              <p><strong>Closing reflections (10 minutes).</strong> Selected participants will share their statements or insights with the room.</p>
+              <p>No advance preparation is required. The activity draws on <a href="https://hbr.org/2023/05/a-new-approach-to-building-your-personal-brand">Avery and Greenwald’s personal-branding framework</a>.</p>
+            </details>
+          </div>
+        </li>
+        <li class="item">
+          <span class="slot">2:40–3:00 pm</span>
+          <div class="session">
+            <h3>Celebrating Research Excellence: Awards and Closing Remarks</h3>
+            <p>The symposium concludes with the TMK HDR Awards, celebrating research excellence, engagement and contributions to the HDR community.</p>
+            <p class="team"><strong>Closing session</strong> · Professor Brent Moyle, Associate Professor Sara Thaichon and Valério Neto</p>
+            <details>
+              <summary>Featured awards</summary>
+              <ul>
+                <li><strong>Best Research Paper Award.</strong> Recognises originality, theoretical contribution, methodological rigour and practical relevance.</li>
+                <li><strong>Research Impact &amp; Engagement Award.</strong> Recognises contributions to industry, policy, practice and the wider community.</li>
+                <li><strong>Rising Voice Award.</strong> Recognises meaningful contributions to symposium discussions and activities.</li>
+              </ul>
+            </details>
+          </div>
+        </li>
+      </ol>
+    </section>
+  </main>
+  <footer>
+    <div class="wrap"><a href="#top">Back to top</a></div>
+  </footer>
+  <dialog class="venue-map" id="venue-map" aria-labelledby="venue-map-title">
+    <div class="map-info">
+      <div class="map-heading">
+        <h2 id="venue-map-title">Griffith Business School</h2>
+        <form method="dialog"><button autofocus>Close</button></form>
+      </div>
+      <p>Gold Coast campus · Building G42, Room 4.23</p>
+    </div>
+    <iframe title="Interactive campus map showing the location of Building G42"
+      data-src="https://www.openstreetmap.org/export/embed.html?bbox=153.3797%2C-27.9646%2C153.3865%2C-27.9606&amp;layer=mapnik&amp;marker=-27.96261%2C153.38310"></iframe>
+    <div class="map-actions">
+      <a href="https://www.google.com/maps/search/?api=1&amp;query=-27.96261%2C153.38310">Open in Google Maps <span aria-hidden="true">↗</span></a>
+    </div>
+  </dialog>
+  <script>
+    const venueLink = document.querySelector("#venue-link");
+    const venueMap = document.querySelector("#venue-map");
+    const campusMap = venueMap.querySelector("iframe");
+
+    if (typeof venueMap.showModal === "function") {
+      venueLink.setAttribute("aria-haspopup", "dialog");
+      venueLink.addEventListener("click", (event) => {
+        if (event.defaultPrevented || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
+        venueMap.showModal();
+        event.preventDefault();
+        if (!campusMap.hasAttribute("src")) campusMap.src = campusMap.dataset.src;
+      });
+      venueMap.addEventListener("close", () => venueLink.focus());
+    }
+  </script>
+</body>
+</html>
